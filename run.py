@@ -13,23 +13,31 @@ def validate_number_input(data):
         print('What you have entered is not a number!')
         return False
     return True
-
+    
 number = random.randint(1, 20)
-
-player_name = input("Hello, What's your name?")
+player_name = input("Hello, please your name, if you enter nothing we will just call you player one:").strip().lower()
+#validation....
+if player_name == "":
+    player_name = "player one"
+    
 number_of_guesses = 0
-print('Hello '+ player_name+ ' I am Guessing a number between 1 and 20. Can you guess the number? You only 5 attempts to guess')
-
+print(f'okay! {player_name} I am guessing a number bewween 1 and 20, what am i guessing?')
 while number_of_guesses < 5:
-    guess = int(input())
-    number_of_guesses += 1
-    if guess < number:
-        print('Your guess is too low')
-    if guess > number:
-        print('Your guess is too high')
-    if guess == number:
-        break
-if guess == number:
-    print('You guessed the number in ' + str(number_of_guesses) + ' tries!')
-else:
-    print('You did not guess the number, The number was ' + str(number))
+    player_guess = input().strip()
+    # check that what is entered is a number
+    check_guess = validate_number_input(player_guess)
+    
+    if check_guess:
+        guess = int(player_guess)
+    
+        number_of_guesses += 1
+        if guess < number:
+            print('Your guess is too low')
+        if guess > number:
+            print('Your guess is too high')
+        if guess == number:
+            break
+        if guess == number:
+            print('You guessed the number in ' + str(number_of_guesses) + ' tries!')
+        else:
+            print('You did not guess the number, The number was ' + str(number))
