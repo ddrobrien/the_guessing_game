@@ -8,7 +8,7 @@ The project was created using Python.
 
 ## Features
 
-The purpose of the game is to demonstrate my use of Python. Not HTML, CSS or JavaScript has been used. The project released through Heroku displays a simple Python engine in which the code created can be displayed and used. 
+The purpose of the game is to demonstrate my use of Python. No HTML, CSS or JavaScript has been used. The project released through Heroku displays a simple Python engine in which the code created can be displayed and used. 
 
 ## Game start
 
@@ -38,15 +38,20 @@ If a user cannot guess the number within 5 attempts the game will end. It will e
 
 ![Game win](assets/images/Game%20win.png)
 
-If a user guesses the number within 5 attempts, then the user wins. The game will give a success message showing that the user won the game, and how many attempts they did it in. 
+If a user guesses the number within 5 attempts, then the user wins. The game will give a success message showing that the user won the game, and how many attempts they did it in.
+
+## Game continuation
+
+![Contiue Game]
+
+Once the game is complete, is will ask whether the user wants to continue the game, or whether the user wants finish the game. It will give options to which buttons to use to continue, and which buttons to use to exit the game. 
 
 ## Validation
 
 Validation used within the game is to ensure that:
 
-1) A name is used at the start of the game
-2) That a number is entered during the guessing part of the game
-3) that a number between 1 and 20 is used, any other numbers entered and the game will show an error message explaining that only numbers between 1 and 20 can be entered. 
+1) That a number is entered during the guessing part of the game
+2) that a number between 1 and 20 is used, any other numbers entered and the game will show an error message explaining that only numbers between 1 and 20 can be entered. 
 
 ## Testing
 

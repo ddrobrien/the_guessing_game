@@ -20,15 +20,14 @@ def validate_number_input(data):
 
 def get_player_namer():
     player_name = input("Hello, tell me your name, if you enter nothing we will call you player one:").strip().lower()
-    """
-        validation
-    """
+    """This method validates that either a name is entered, or a default is used"""
     if player_name == "":
         player_name = "player one"
     return player_name
 
 
 def game_loop(player_name):
+    """Game loop functions to help the user through the game and make guesses"""
     number_of_guesses = 0
     print(f'okay! {player_name} I am guessing a number bewween 1 and 20, what am i guessing?')
 
@@ -52,6 +51,7 @@ def game_loop(player_name):
         print('You did not guess the number, The number was ' + str(number))   
     
 def main():
+    """When the game is over, this loop will suggest the user contine or end the game"""
     player_name = get_player_namer()
     while True:
         game_loop(player_name)
