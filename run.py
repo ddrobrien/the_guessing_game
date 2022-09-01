@@ -48,8 +48,8 @@ def game_loop(player_name):
                 print('You guessed the number in ' + str(number_of_guesses) + ' tries!')
                 break
     if number_of_guesses >= 5:
-        print('You did not guess the number, The number was ' + str(number))   
-    
+        print('You did not guess the number, The number was ' + str(number))
+        
 def main():
     """When the game is over, this loop will suggest the user contine or end the game"""
     player_name = get_player_namer()

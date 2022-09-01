@@ -42,7 +42,7 @@ If a user guesses the number within 5 attempts, then the user wins. The game wil
 
 ## Game continuation
 
-![Contiue Game]
+![Contiue Game](assets/images/continue%20game.jpg)
 
 Once the game is complete, is will ask whether the user wants to continue the game, or whether the user wants finish the game. It will give options to which buttons to use to continue, and which buttons to use to exit the game. 
 
@@ -59,7 +59,10 @@ The Guessing Game was tested in the terminal on Github at each stage after code 
 
 The code has also been tested using the PEP8 platform and shows no errors in the code. 
 
-[PEP8 result]
+[PEP8 result](/assets/images/PEP8%20results.jpg)
+
+The PEP8 results returned 8 "line too long" errors. I have ignored these as they are for comments within the print statements, which I cannot shorten anymore. 
+The result also returned 3 space errors within the code, upon inspecting these, any changes I made cretaed errors in the code, and stopped the game from working. I have ignored those as well as the game works with all of the above errors found in the code checker. 
 
 ## Deployment
 
